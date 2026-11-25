@@ -1,6 +1,6 @@
 {
   "name": "blackbox-web-reverse",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Authorized black-box web application reverse-engineering workflow for AI agents",
   "type": "module",
   "private": true,

@@ -3,7 +3,7 @@ name: blackbox-web-reverse
 description: "Authorized black-box web application reverse engineering: reconstruct frontend routes, shipped JavaScript, API contracts, real-time channels, authentication and authorization behavior, data entities, and business rules from a running system. Use when the user asks to understand, document, migrate, test, or rebuild a website they own or are explicitly authorized to assess, or to turn browser/HAR evidence into a reproducible specification. Do not use for bypassing access controls, paywalls, quotas, CAPTCHAs, or for collecting data outside an approved scope."
 license: MIT
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   author: MYTPONS
 ---
 

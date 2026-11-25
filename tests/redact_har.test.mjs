@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import { redactCapture, redactText, redactUrl } from '../scripts/redact_har.mjs';
 
 test('redacts HAR headers, hosts, identifiers, and tokens', () => {
-  const input = JSON.parse(fs.readFileSync('fixtures/har/sample.har', 'utf8'));
+  const input = JSON.parse(fs.readFileSync('fixtures/har/sample.json', 'utf8'));
   input.log.entries[0].request.headers.push({ name: 'Cookie', value: 'session=example' });
   const output = redactCapture(input);
 

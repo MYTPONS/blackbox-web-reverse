@@ -1,0 +1,55 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "synthetic-fixture",
+      "version": "1.0"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2026-01-01T00:00:00.000Z",
+        "time": 42,
+        "request": {
+          "method": "GET",
+          "url": "https://app.example.test/api/examples/123456?page=2&token=<redacted>",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            { "name": "Accept", "value": "application/json" },
+            { "name": "Authorization", "value": "<redacted>" }
+          ],
+          "queryString": [
+            { "name": "page", "value": "2" },
+            { "name": "token", "value": "<redacted>" }
+          ],
+          "cookies": [],
+          "headersSize": -1,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/1.1",
+          "headers": [
+            { "name": "content-type", "value": "application/json" },
+            { "name": "x-request-id", "value": "req-example-001" }
+          ],
+          "cookies": [],
+          "content": {
+            "size": 62,
+            "mimeType": "application/json",
+            "text": "{\"data\":[{\"id\":\"123456\",\"title\":\"Example\"}]}"
+          },
+          "redirectURL": "",
+          "headersSize": -1,
+          "bodySize": 62
+        },
+        "cache": {},
+        "timings": {
+          "send": 1,
+          "wait": 40,
+          "receive": 1
+        }
+      }
+    ]
+  }
+}

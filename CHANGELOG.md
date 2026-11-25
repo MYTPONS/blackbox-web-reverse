@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-11-26
+
+- Renamed the synthetic HAR fixture to `.json` so version control and CI include it.
+- Verified the public release against the repository privacy scan and full test suite.
+
 ## 1.0.0 — 2026-11-26
 
 - Generalized the internal black-box website reverse-engineering workflow.

@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { execFileSync } from 'node:child_process';
 
 test('summarizes redacted HAR into an endpoint inventory', () => {
-  const output = execFileSync(process.execPath, ['scripts/summarize_har.mjs', 'fixtures/har/sample.har'], {
+  const output = execFileSync(process.execPath, ['scripts/summarize_har.mjs', 'fixtures/har/sample.json'], {
     encoding: 'utf8',
   });
   assert.match(output, /app\.example\.test/);

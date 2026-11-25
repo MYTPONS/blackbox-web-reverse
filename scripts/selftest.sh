@@ -43,7 +43,7 @@ else
 fi
 
 echo "## fixtures and tests"
-for file in fixtures/har/sample.har fixtures/sourcemap.map fixtures/response.example.json tests/redact_har.test.mjs; do
+for file in fixtures/har/sample.json fixtures/sourcemap.map fixtures/response.example.json tests/redact_har.test.mjs; do
   if [ -s "$file" ]; then ok "$file"; else bad "missing $file"; fi
 done
 if node --test tests/*.test.mjs >/tmp/bwr-tests.out 2>&1; then
