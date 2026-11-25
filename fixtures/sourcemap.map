@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "app.js",
+  "sourceRoot": "src",
+  "sources": ["main.js", "utils/format.js"],
+  "sourcesContent": [
+    "export const answer = 42;\n",
+    "export const format = (value) => String(value);\n"
+  ],
+  "names": [],
+  "mappings": "AAAA;AACA"
+}

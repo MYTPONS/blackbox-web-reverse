@@ -1,0 +1,5 @@
+{
+  "access_token": "header.payload.signature",
+  "exp": 1767225600,
+  "role": "reader"
+}

@@ -1,0 +1,10 @@
+{
+  "data": {
+    "id": "MTIzNDU2",
+    "href": "https://app.example.test/items/123456",
+    "token": "<redacted>",
+    "nested": {
+      "cursor": "L2l0ZW1zLzEyMzQ1Ng=="
+    }
+  }
+}

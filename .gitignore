@@ -1,0 +1,12 @@
+node_modules/
+.pnpm-store/
+out/
+captures/
+*.har
+*.mitm
+*.log
+.DS_Store
+TARGET_CARD.md
+.env
+.env.*
+!.env.example

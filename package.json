@@ -1,0 +1,35 @@
+{
+  "name": "blackbox-web-reverse",
+  "version": "1.0.0",
+  "description": "Authorized black-box web application reverse-engineering workflow for AI agents",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MYTPONS/blackbox-web-reverse.git"
+  },
+  "homepage": "https://github.com/MYTPONS/blackbox-web-reverse#readme",
+  "bugs": {
+    "url": "https://github.com/MYTPONS/blackbox-web-reverse/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "check": "node scripts/syntax_check.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/check_package.mjs",
+    "leakcheck": "node scripts/privacy_scan.mjs .",
+    "verify": "pnpm check && pnpm test && pnpm build && pnpm leakcheck",
+    "skillcheck": "bash scripts/selftest.sh"
+  },
+  "keywords": [
+    "agent-skill",
+    "black-box",
+    "api-contract",
+    "web-reverse-engineering",
+    "sourcemap",
+    "har"
+  ]
+}

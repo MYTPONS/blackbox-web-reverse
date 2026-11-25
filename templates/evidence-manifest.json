@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "scope": {
+    "owner": "<owner>",
+    "authorization": "<ticket-or-reference>",
+    "origins": [
+      "https://app.example.test"
+    ],
+    "testAccounts": [
+      "reader@example.test"
+    ]
+  },
+  "tooling": {
+    "node": ">=20",
+    "scripts": "blackbox-web-reverse@1.0.0"
+  },
+  "artifacts": [
+    {
+      "id": "req-001",
+      "kind": "request-response",
+      "path": "requests/req-001.redacted.http",
+      "sha256": "<sha256>",
+      "redacted": true,
+      "description": "Read-only list request with synthetic response"
+    }
+  ],
+  "unknowns": [
+    "Cross-tenant behavior was not tested because no second tenant was authorized."
+  ]
+}
